@@ -13,7 +13,7 @@ export function Gallery({ photos }: GalleryProps) {
   return (
     <main
       onContextMenu={(e) => e.preventDefault()}
-      className="min-h-screen bg-gradient-to-br from-stone-700 to-black text-white px-4 py-12"
+      className="min-h-screen bg-black text-white px-4 py-12"
     >
       <h1 className="text-4xl font-bold text-center mb-8">Gallery</h1>
 
