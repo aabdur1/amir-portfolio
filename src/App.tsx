@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         variant="outline"
         className="absolute top-4 right-4 border-stone-300 rounded-xl hover:bg-stone-300 hover:text-black transition-colors"
       >
-        <a href="#gallery">View Gallery</a>
+        <Link to="/gallery">View Gallery</Link>
       </Button>
       <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-8 px-4">
         <img
