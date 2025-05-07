@@ -11,7 +11,10 @@ export function Gallery({ photos }: GalleryProps) {
   const [index, setIndex] = useState(0);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-stone-700 to-black text-white px-4 py-12">
+    <main
+      onContextMenu={(e) => e.preventDefault()}
+      className="min-h-screen bg-gradient-to-br from-stone-700 to-black text-white px-4 py-12"
+    >
       <h1 className="text-4xl font-bold text-center mb-8">Gallery</h1>
 
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">

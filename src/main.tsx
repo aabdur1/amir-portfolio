@@ -20,6 +20,11 @@ const photos = [
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC08271.jpg",
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC7026-HDR.jpg",
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC08688.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC00520-Enhanced-NR-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC00560-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/chicagosnow.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/Mealtime_Original.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC02329_Original.jpg",
   // more URLs
 ];
 
