@@ -20,7 +20,7 @@ export function Gallery({ photos }: GalleryProps) {
       <Button
         asChild
         variant="outline"
-        className="absolute top-4 right-4 font-avenir border-stone-300 rounded-xl hover:bg-orange-200 hover:text-black transition-colors"
+        className="absolute top-4 left-4 font-avenir border-stone-300 rounded-xl hover:bg-orange-200 hover:text-black transition-colors"
       >
         <Link to="/">Home</Link>
       </Button>

@@ -25,6 +25,15 @@ const photos = [
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/chicagosnow.jpg",
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/Mealtime_Original.jpg",
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC02329_Original.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC6718.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC7046.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC6010.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC5998.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC6029.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC4554-HDR.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC7366.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC09056-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC09103-Edit.jpg",
   // more URLs
 ];
 
