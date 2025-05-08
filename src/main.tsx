@@ -34,6 +34,16 @@ const photos = [
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC7366.jpg",
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC09056-Edit.jpg",
   "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/DSC09103-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00845-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00790-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00757-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00837-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00806-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00839-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00829-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00787-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00847-Edit.jpg",
+  "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00795-Edit.jpg",
   // more URLs
 ];
 

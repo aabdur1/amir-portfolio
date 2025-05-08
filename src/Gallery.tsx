@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Navbar } from "@/components/ui/navbar";
 
 type GalleryProps = {
   photos: string[];
@@ -15,15 +14,9 @@ export function Gallery({ photos }: GalleryProps) {
   return (
     <main
       onContextMenu={(e) => e.preventDefault()}
-      className="min-h-screen bg-black text-white px-4 py-12"
+      className="min-h-screen bg-black text-white px-4 py-4"
     >
-      <Button
-        asChild
-        variant="outline"
-        className="absolute top-4 left-4 font-avenir border-stone-300 rounded-xl hover:bg-orange-200 hover:text-black transition-colors"
-      >
-        <Link to="/">Home</Link>
-      </Button>
+      <Navbar />
       <h1 className="text-4xl font-avenir text-orange-200 text-center mb-8">
         Gallery
       </h1>
