@@ -1,36 +1,47 @@
-# React + TypeScript + Vite + Tailwind
+# Amir Abdur-Rahim Portfolio
 
-This template provides a minimal setup to get React working in Vite, TypeScript, and Tailwind.
+Welcome to my personal portfolio site, built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. This site showcases my photography and creative work, with high-resolution photos served from an **Amazon S3 bucket**.
 
-## Getting Started 🚀
+Visit the live site here: [amirabdurrahim.com](https://amirabdurrahim.com)
 
-1. Clone the repo.
-2. Install dependencies: `pnpm install`
-3. Start the dev server: `pnpm dev`
+---
 
-### Or
+## ✨ Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmoinulmoin%2Fvite-react-tailwind-starter)
+- Responsive, modern design
+- Hero section with custom Adobe Fonts
+- Interactive gallery with lightbox view
+- Pinterest-style masonry grid layout
+- Photos hosted on Amazon S3
+- React Router navigation
+- Custom theming with Tailwind CSS
+- Deployed with Netlify
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📸 Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **React** + **TypeScript**
+- **Tailwind CSS** for styling
+- **Vite** for fast development/build
+- **Adobe Fonts** integration
+- **Amazon S3** for photo hosting
+- **React Router DOM** for routing
+- **Yet Another React Lightbox** for gallery lightbox
+- **Netlify** for deployment
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+---
+
+## 🏗️ Project Structure
+
+```bash
+/src
+  ├── App.tsx          # Home page
+  ├── Gallery.tsx      # Gallery page
+  ├── components/      # UI components
+  ├── index.css        # Tailwind styles
+  ├── main.tsx         # ReactDOM + routing
+tailwind.config.js      # Tailwind configuration
+vite.config.ts          # Vite configuration
+public/index.html       # Main HTML template
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
-## License 📄
-
-[MIT License](https://github.com/moinulmoin/vite-react-tailwind-starter/blob/master/LICENSE)
