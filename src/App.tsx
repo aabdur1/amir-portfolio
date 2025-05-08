@@ -7,7 +7,7 @@ function App() {
       <Button
         asChild
         variant="outline"
-        className="absolute top-4 right-4 font-avenir border-stone-300 rounded-xl hover:bg-stone-300 hover:text-black transition-colors"
+        className="absolute top-4 right-4 font-avenir border-stone-300 rounded-xl hover:bg-orange-200 hover:text-black transition-colors"
       >
         <Link to="/gallery">View Gallery</Link>
       </Button>
