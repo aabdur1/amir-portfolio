@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-stone-800 to-black text-white flex items-center justify-center">
+    <main className="min-h-screen bg-black text-white flex items-center justify-center">
       <Button
         asChild
         variant="outline"
-        className="absolute top-4 right-4 border-stone-300 rounded-xl hover:bg-stone-300 hover:text-black transition-colors"
+        className="absolute top-4 right-4 font-avenir border-stone-300 rounded-xl hover:bg-stone-300 hover:text-black transition-colors"
       >
         <Link to="/gallery">View Gallery</Link>
       </Button>
@@ -18,13 +18,13 @@ function App() {
           className="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover"
         />
         <div>
-          <h1 className="text-stone-200 text-5xl font-bold mb-4">
+          <h1 className="text-orange-200 text-6xl font-avenir font-normal mb-4">
             Amir Abdur-Rahim
           </h1>
-          <p className="text-xl text-stone-400 mb-2">
+          <p className="font-avenir font-thin text-2xl text-stone-200 mb-2">
             Photographer & Creative Technologist
           </p>
-          <p className="text-sm text-gray-400">
+          <p className="font-avenir font-xl text-sm text-gray-400">
             Chicago-based | JavaScript | AWS | Epic EMR
           </p>
         </div>
