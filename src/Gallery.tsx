@@ -17,7 +17,7 @@ export function Gallery({ photos }: GalleryProps) {
       className="min-h-screen bg-black text-white px-4 py-4"
     >
       <Navbar />
-      <h1 className="text-4xl font-avenir text-orange-200 text-center mb-8">
+      <h1 className="text-4xl font-avenir text-orange-200 text-center mb-8 mt-4">
         Gallery
       </h1>
 
