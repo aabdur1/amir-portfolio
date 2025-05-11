@@ -44,7 +44,7 @@ export function Gallery({ photos }: GalleryProps) {
         <h1 className="text-4xl font-avenir text-orange-200 text-center">
           Gallery
         </h1>
-        <div className=" flex justify-center sm:justify-end">
+        <div className="mt-4 flex justify-center sm:justify-end">
           <Select value={sortBy} onValueChange={setSortBy}>
             <SelectTrigger className="w-full sm:w-[180px] bg-white text-black">
               <SelectValue placeholder="Sort by" />
