@@ -7,6 +7,7 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import { Navbar } from "@/components/ui/navbar";
 
@@ -88,6 +89,7 @@ export function Gallery({ photos }: GalleryProps) {
         close={() => setOpen(false)}
         index={index}
         slides={sortedPhotos.map((photo) => ({ src: photo.url }))}
+        plugins={[Zoom]}
       />
     </main>
   );
