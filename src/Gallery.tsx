@@ -41,7 +41,7 @@ export function Gallery({ photos }: GalleryProps) {
               }}
               className="w-full rounded-lg shadow object-cover cursor-pointer transition-transform duration-200 hover:scale-105"
             />
-            <div className="mt-1 text-xs text-gray-400">
+            <div className="mt-1 font-avenir text-xs text-gray-400">
               <p>{photo.date}</p>
               <p>{photo.camera}</p>
               <p>{photo.lens}</p>

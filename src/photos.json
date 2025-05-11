@@ -108,12 +108,6 @@
     "lens": "18-50mm F2.8 DC DN | Contemporary 021"
   },
   {
-    "url": "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/metadata.json",
-    "date": "2019-02-09",
-    "camera": "ILCE-6300",
-    "lens": "E 35mm F1.8 OSS"
-  },
-  {
     "url": "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00845-Edit.jpg",
     "date": "2025-05-07",
     "camera": "ILCE-6700",
@@ -223,9 +217,9 @@
   },
   {
     "url": "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC7366.jpg",
-    "date": "unknown",
-    "camera": "unknown",
-    "lens": "unknown"
+    "date": "2024-05-26",
+    "camera": "ILCE-6700",
+    "lens": "18-50mm F2.8 DC DN | Contemporary 021"
   },
   {
     "url": "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/20250507-DSC00790-Edit.jpg",
@@ -235,8 +229,8 @@
   },
   {
     "url": "https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC4596-HDR-Edit.jpg",
-    "date": "unknown",
-    "camera": "unknown",
-    "lens": "unknown"
+    "date": "2023-05-26",
+    "camera": "ILCE-6300",
+    "lens": "16mm F1.4 DC DN | Contemporary 017"
   }
 ]
