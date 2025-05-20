@@ -1,6 +1,12 @@
 import initSqlJs from "sql.js";
 import { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import {
   Table,
   TableBody,
@@ -45,9 +51,16 @@ export default function FullCarTable() {
 
   return (
     <Card className="w-full font-avenir mt-8">
+      <CardHeader className="pb-0">
+        <CardTitle className="text-2xl font-semibold mb-2">
+          Full Car Dataset
+        </CardTitle>
+        <CardDescription className="text-sm text-muted-foreground">
+          This table displays the full dataset of car values, including their
+          prices, sizes, and performance metrics.
+        </CardDescription>
+      </CardHeader>
       <CardContent className="p-6">
-        <h2 className="text-2xl font-semibold mb-4">Full Car Dataset</h2>
-
         <ScrollArea className="rounded border">
           <div className="max-h-[500px] overflow-auto relative">
             <Table className="min-w-[900px]">

@@ -35,7 +35,7 @@ export default function SQLiteDemo() {
         SELECT "Car", CAST(REPLACE("Price ($)", ',', '') AS INTEGER) AS price,
                "Predicted Reliability", "Road-Test Score"
         FROM carvalues
-        WHERE CAST(REPLACE("Price ($)", ',', '') AS INTEGER) < 30000
+        WHERE price < 30000
           AND "Predicted Reliability" >= 4
         ORDER BY "Predicted Reliability" DESC, "Road-Test Score" DESC;
       `;
@@ -60,11 +60,11 @@ export default function SQLiteDemo() {
         <CardTitle className="text-2xl font-semibold mb-2">
           Live SQL Query (SQLite in Browser)
         </CardTitle>
-        <CardDescription className="text-sm text-muted-foreground">
+        <CardDescription className="text-sm text-muted-foreground pb-4">
           This query selects cars under $30,000 with a reliability score of 4 or
           higher.
         </CardDescription>
-        <pre className="bg-muted text-sm p-4 rounded font-mono overflow-x-auto whitespace-pre-wrap border mb-4">
+        <pre className="bg-muted text-sm text-sky-300 p-4 rounded font-mono overflow-x-auto whitespace-pre-wrap border mb-4">
           {query}
         </pre>
       </CardHeader>
