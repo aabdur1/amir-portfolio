@@ -23,6 +23,14 @@ export function Navbar() {
             asChild
             className="hover:underline hover:text-orange-200"
           >
+            <Link to="/sql-projects">SQL Projects</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink
+            asChild
+            className="hover:underline hover:text-orange-200"
+          >
             <Link to="/gallery">Gallery</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
