@@ -15,7 +15,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export default function FullCarTable() {
   const [results, setResults] = useState<any[]>([]);
@@ -106,6 +106,7 @@ export default function FullCarTable() {
               </TableBody>
             </Table>
           </div>
+          <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </CardContent>
     </Card>
