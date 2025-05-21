@@ -50,12 +50,12 @@ export default function FullCarTable() {
   }, []);
 
   return (
-    <Card className="w-full font-avant mt-8 mb-10 border-foreground">
+    <Card className="w-full font-avenir mt-8 mb-10 border-foreground">
       <CardHeader className="pb-0">
-        <CardTitle className="text-2xl font-semibold mb-2">
+        <CardTitle className="text-2xl font-avant font-semibold mb-2">
           Full Car Dataset
         </CardTitle>
-        <CardDescription className="text-sm text-muted-foreground">
+        <CardDescription className="text-sm text-muted-foreground font-avant">
           This table displays the full dataset of car values, including their
           prices, sizes, and performance metrics.
         </CardDescription>

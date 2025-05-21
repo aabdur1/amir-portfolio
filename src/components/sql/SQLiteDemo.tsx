@@ -55,12 +55,12 @@ export default function SQLiteDemo() {
   }, []);
 
   return (
-    <Card className="w-full font-avant mt-8">
+    <Card className="w-full font-avenir mt-8">
       <CardHeader>
-        <CardTitle className="text-2xl font-semibold mb-2">
+        <CardTitle className="text-2xl font-avant font-semibold mb-2">
           Live SQL Query (SQLite in Browser)
         </CardTitle>
-        <CardDescription className="text-sm text-muted-foreground pb-4">
+        <CardDescription className="text-sm font-avant text-muted-foreground pb-4">
           This query selects cars under $30,000 with a reliability score of 4 or
           higher.
         </CardDescription>
