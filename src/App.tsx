@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen px-4 py-4 bg-background text-foreground font-avant">
       <Navbar />
-      <main className=" flex-1 flex items-center justify-center">
+      <main className="m-4 flex-1 flex items-center justify-center">
         <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-8 px-4">
           <img
             src="https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC4482.jpg"
