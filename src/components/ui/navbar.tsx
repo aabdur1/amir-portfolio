@@ -6,56 +6,63 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
 import { ModeToggle } from "@/components/ui/mode-toggle";
+import { Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 export function Navbar() {
   return (
-    <div className="flex justify-between">
-      <NavigationMenu>
+    <div className="w-full py-2 flex justify-between items-center border-b bg-background">
+      {/* Desktop Navigation */}
+      <NavigationMenu className="hidden md:block">
         <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avant">
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className="hover:underline hover:text-primary"
-            >
-              <Link to="/">Home</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className="hover:underline hover:text-primary"
-            >
-              <Link to="/sql-projects">SQL Projects</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className="hover:underline hover:text-primary"
-            >
-              <Link to="/gallery">Gallery</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className="hover:underline hover:text-primary"
-            >
-              <a href="#about">About</a>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className="hover:underline hover:text-primary"
-            >
-              <a href="#contact">Contact</a>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
+          {navLinks.map(({ label, to }) => (
+            <NavigationMenuItem key={label}>
+              <NavigationMenuLink
+                asChild
+                className="hover:underline hover:text-primary"
+              >
+                <Link to={to}>{label}</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          ))}
         </NavigationMenuList>
       </NavigationMenu>
-      <ModeToggle />
+
+      {/* Mobile Hamburger Menu */}
+      <div className="block md:hidden">
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <button className="p-2">
+              <Menu className="w-6 h-6" />
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="mt-2 w-40">
+            {navLinks.map(({ label, to }) => (
+              <DropdownMenuItem asChild key={label}>
+                <Link to={to}>{label}</Link>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      {/* Theme Toggle */}
+      <div className="ml-2">
+        <ModeToggle />
+      </div>
     </div>
   );
 }
-// This component is a navigation bar that uses the NavigationMenu component from Radix UI.
+
+const navLinks = [
+  { label: "Home", to: "/" },
+  { label: "SQL Projects", to: "/sql-projects" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "About", to: "#about" },
+  { label: "Contact", to: "#contact" },
+];
