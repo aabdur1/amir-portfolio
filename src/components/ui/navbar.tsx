@@ -5,53 +5,57 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export function Navbar() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avenir">
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            asChild
-            className="hover:underline hover:text-orange-200"
-          >
-            <Link to="/">Home</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            asChild
-            className="hover:underline hover:text-orange-200"
-          >
-            <Link to="/sql-projects">SQL Projects</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            asChild
-            className="hover:underline hover:text-orange-200"
-          >
-            <Link to="/gallery">Gallery</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            asChild
-            className="hover:underline hover:text-orange-200"
-          >
-            <a href="#about">About</a>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            asChild
-            className="hover:underline hover:text-orange-200"
-          >
-            <a href="#contact">Contact</a>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className="flex justify-between">
+      <NavigationMenu>
+        <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avenir">
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className="hover:underline hover:text-accent-foreground"
+            >
+              <Link to="/">Home</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className="hover:underline hover:text-accent-foreground"
+            >
+              <Link to="/sql-projects">SQL Projects</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className="hover:underline hover:text-accent-foreground"
+            >
+              <Link to="/gallery">Gallery</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className="hover:underline hover:text-accent-foreground"
+            >
+              <a href="#about">About</a>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className="hover:underline hover:accent-foreground"
+            >
+              <a href="#contact">Contact</a>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+      <ModeToggle />
+    </div>
   );
 }
 // This component is a navigation bar that uses the NavigationMenu component from Radix UI.

@@ -55,7 +55,7 @@ export default function SQLiteDemo() {
   }, []);
 
   return (
-    <Card className="w-full font-avenir mt-8">
+    <Card className="w-full border-foreground font-avenir mt-8">
       <CardHeader>
         <CardTitle className="text-2xl font-semibold mb-2">
           Live SQL Query (SQLite in Browser)
@@ -64,13 +64,13 @@ export default function SQLiteDemo() {
           This query selects cars under $30,000 with a reliability score of 4 or
           higher.
         </CardDescription>
-        <pre className="bg-muted text-sm text-sky-300 p-4 rounded font-mono overflow-x-auto whitespace-pre-wrap border mb-4">
+        <pre className="bg-muted text-sm text-green-600 p-4 rounded font-mono overflow-x-auto whitespace-pre-wrap border border-foreground mb-4">
           {query}
         </pre>
       </CardHeader>
 
       <CardContent className="p-6">
-        <ScrollArea className="rounded border">
+        <ScrollArea className="rounded border border-foreground">
           <div className="max-h-[400px] overflow-auto relative">
             <Table className="min-w-[700px]">
               <TableHeader>
@@ -91,7 +91,7 @@ export default function SQLiteDemo() {
               </TableHeader>
               <TableBody>
                 {results.map((row, i) => (
-                  <TableRow key={i} className="hover:bg-gray-800">
+                  <TableRow key={i} className="hover:bg-muted">
                     <TableCell>{row["Car"]}</TableCell>
                     <TableCell>${row["price"].toLocaleString()}</TableCell>
                     <TableCell>{row["Predicted Reliability"]}</TableCell>

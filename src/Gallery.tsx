@@ -38,19 +38,19 @@ export function Gallery({ photos }: GalleryProps) {
   return (
     <main
       onContextMenu={(e) => e.preventDefault()}
-      className="min-h-screen bg-black text-white px-4 py-4"
+      className="min-h-screen bg-background text-foreground px-4 py-4"
     >
       <Navbar />
       <div className="relative mt-4 mb-4 px-4">
-        <h1 className="text-4xl font-avenir text-orange-200 text-center">
+        <h1 className="text-4xl font-avenir text-foreground text-center">
           Gallery
         </h1>
         <div className="mt-4 flex justify-center sm:justify-end">
           <Select value={sortBy} onValueChange={setSortBy}>
-            <SelectTrigger className="w-full sm:w-[180px] bg-white text-black">
+            <SelectTrigger className="w-full sm:w-[180px] bg-background text-foreground border border-foreground rounded-md shadow-sm">
               <SelectValue placeholder="Sort by" />
             </SelectTrigger>
-            <SelectContent className="bg-white text-black">
+            <SelectContent className="bg-background text-foreground border border-foreground rounded-md shadow-sm">
               <SelectItem value="date">Date</SelectItem>
               <SelectItem value="camera">Camera</SelectItem>
               <SelectItem value="lens">Lens</SelectItem>
@@ -75,7 +75,7 @@ export function Gallery({ photos }: GalleryProps) {
               loading="lazy"
               className="w-full rounded-lg shadow object-cover"
             />
-            <div className="mt-1 font-avenir text-xs text-gray-400">
+            <div className="mt-1 font-avenir text-xs text-foreground">
               <p>{photo.date}</p>
               <p>{photo.camera}</p>
               <p>{photo.lens}</p>

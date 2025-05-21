@@ -50,7 +50,7 @@ export default function FullCarTable() {
   }, []);
 
   return (
-    <Card className="w-full font-avenir mt-8">
+    <Card className="w-full font-avenir mt-8 border-foreground">
       <CardHeader className="pb-0">
         <CardTitle className="text-2xl font-semibold mb-2">
           Full Car Dataset
@@ -61,7 +61,7 @@ export default function FullCarTable() {
         </CardDescription>
       </CardHeader>
       <CardContent className="p-6">
-        <ScrollArea className="rounded border">
+        <ScrollArea className="rounded border border-foreground">
           <div className="max-h-[500px] overflow-auto relative">
             <Table className="min-w-[900px]">
               <TableHeader>
@@ -91,7 +91,7 @@ export default function FullCarTable() {
               </TableHeader>
               <TableBody>
                 {results.map((row, i) => (
-                  <TableRow key={i} className="hover:bg-gray-800">
+                  <TableRow key={i} className="hover:bg-muted">
                     <TableCell>{row["Car"]}</TableCell>
                     <TableCell>{row["Size"]}</TableCell>
                     <TableCell>
