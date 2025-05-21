@@ -1,6 +1,7 @@
 import SQLiteDemo from "./components/sql/SQLiteDemo";
 import FullCarTable from "./components/sql/FullCarTable";
 import { Navbar } from "@/components/ui/navbar";
+import { Footer } from "@/components/ui/footer";
 
 export default function SQLProjects() {
   return (
@@ -16,6 +17,7 @@ export default function SQLProjects() {
         <FullCarTable />
         <SQLiteDemo />
       </main>
+      <Footer />
     </div>
   );
 }

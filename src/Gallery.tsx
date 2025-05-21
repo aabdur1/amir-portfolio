@@ -10,6 +10,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import { Navbar } from "@/components/ui/navbar";
+import { Footer } from "@/components/ui/footer";
 
 type Photo = {
   url: string;
@@ -91,6 +92,7 @@ export function Gallery({ photos }: GalleryProps) {
         slides={sortedPhotos.map((photo) => ({ src: photo.url }))}
         plugins={[Zoom]}
       />
+      <Footer />
     </main>
   );
 }
