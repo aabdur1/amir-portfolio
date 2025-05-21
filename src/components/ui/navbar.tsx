@@ -41,7 +41,10 @@ export function Navbar() {
               <Menu className="w-6 h-6" />
             </button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="mt-2 w-40">
+          <DropdownMenuContent
+            align="end"
+            className="mt-2 ml-4 w-40 border-foreground"
+          >
             {navLinks.map(({ label, to }) => (
               <DropdownMenuItem asChild key={label}>
                 <Link to={to}>{label}</Link>
