@@ -9,7 +9,7 @@ function App() {
           <img
             src="https://amirabdurrahim-photos.s3.us-east-2.amazonaws.com/_DSC4482.jpg"
             alt="Amir Abdur-Rahim"
-            className="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover"
+            className="rounded-full w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover shadow-floaty"
           />
           <div>
             <h1 className="text-6xl font-avenir font-normal mb-1">Amir</h1>

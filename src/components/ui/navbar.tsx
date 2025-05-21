@@ -15,7 +15,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className="hover:underline hover:text-accent-foreground"
+              className="hover:underline hover:text-primary"
             >
               <Link to="/">Home</Link>
             </NavigationMenuLink>
@@ -23,7 +23,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className="hover:underline hover:text-accent-foreground"
+              className="hover:underline hover:text-primary"
             >
               <Link to="/sql-projects">SQL Projects</Link>
             </NavigationMenuLink>
@@ -31,7 +31,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className="hover:underline hover:text-accent-foreground"
+              className="hover:underline hover:text-primary"
             >
               <Link to="/gallery">Gallery</Link>
             </NavigationMenuLink>
@@ -39,7 +39,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className="hover:underline hover:text-accent-foreground"
+              className="hover:underline hover:text-primary"
             >
               <a href="#about">About</a>
             </NavigationMenuLink>
@@ -47,7 +47,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className="hover:underline hover:accent-foreground"
+              className="hover:underline hover:text-primary"
             >
               <a href="#contact">Contact</a>
             </NavigationMenuLink>

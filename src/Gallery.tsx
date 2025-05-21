@@ -73,7 +73,7 @@ export function Gallery({ photos }: GalleryProps) {
               src={photo.url}
               alt={`Photo ${i + 1}`}
               loading="lazy"
-              className="w-full rounded-lg shadow object-cover"
+              className="w-full rounded-lg shadow-floaty object-cover"
             />
             <div className="mt-1 font-avenir text-xs text-foreground">
               <p>{photo.date}</p>

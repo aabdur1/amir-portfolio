@@ -55,7 +55,7 @@ export default function SQLiteDemo() {
   }, []);
 
   return (
-    <Card className="w-full border-foreground font-avenir mt-8">
+    <Card className="w-full border-foreground font-avenir mt-8 shadow-floaty">
       <CardHeader>
         <CardTitle className="text-2xl font-semibold mb-2">
           Live SQL Query (SQLite in Browser)
