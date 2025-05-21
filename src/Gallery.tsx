@@ -42,7 +42,7 @@ export function Gallery({ photos }: GalleryProps) {
     >
       <Navbar />
       <div className="relative mt-4 mb-4 px-4">
-        <h1 className="text-4xl font-avenir text-foreground text-center">
+        <h1 className="text-4xl font-avant text-foreground text-center">
           Gallery
         </h1>
         <div className="mt-4 flex justify-center sm:justify-end">

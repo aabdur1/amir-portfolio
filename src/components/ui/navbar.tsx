@@ -11,7 +11,7 @@ export function Navbar() {
   return (
     <div className="flex justify-between">
       <NavigationMenu>
-        <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avenir">
+        <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avant">
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild

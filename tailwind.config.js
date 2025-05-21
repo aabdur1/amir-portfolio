@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       fontFamily: {
         avenir: ['"avenir-next-world"', "sans-serif"],
+        avant: ['"itc-avant-garde-gothic-pro"', "sans-serif"],
       },
       fontWeight: {
         DEFAULT: "700",

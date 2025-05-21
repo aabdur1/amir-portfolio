@@ -4,7 +4,7 @@ import { Navbar } from "@/components/ui/navbar";
 
 export default function SQLProjects() {
   return (
-    <div className="px-4 py-4 bg-background font-avenir text-foreground">
+    <div className="px-4 py-4 bg-background font-avant font-light text-foreground">
       <Navbar />
       <main className="min-h-screen flex-row mt-4 items-center justify-center">
         <h1 className="text-4xl font-bold mb-6">Car Value SQL Analysis</h1>

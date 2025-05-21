@@ -50,7 +50,7 @@ export default function FullCarTable() {
   }, []);
 
   return (
-    <Card className="w-full font-avenir mt-8 mb-10 border-foreground">
+    <Card className="w-full font-avant mt-8 mb-10 border-foreground">
       <CardHeader className="pb-0">
         <CardTitle className="text-2xl font-semibold mb-2">
           Full Car Dataset
