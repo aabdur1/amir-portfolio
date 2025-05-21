@@ -29,6 +29,10 @@
   --ring: 221.2 83.2% 53.3%;
 
   --radius: 0.5rem;
+
+  --shadow-floaty: 0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 /* Dark Theme */

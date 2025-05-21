@@ -78,12 +78,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       boxShadow: {
-        floaty: `
-      0 1px 1px hsla(117deg, 0%, 0%, 0.075),
-      0 2px 2px hsl(117deg 0% 0% / 0.075),
-      0 4px 4px hsl(117deg 0% 0% / 0.075),
-      0 12px 12px hsl(117deg 0% 0% / 0.33)
-    `,
+        floaty: "var(--shadow-floaty)",
       },
       textShadow: {
         sm: "0 1px 1px rgba(0, 0, 0, 0.2)",
