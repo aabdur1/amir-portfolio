@@ -91,7 +91,7 @@ export default function FullCarTable() {
               </TableHeader>
               <TableBody>
                 {results.map((row, i) => (
-                  <TableRow key={i} className="hover:bg-muted">
+                  <TableRow key={i}>
                     <TableCell>{row["Car"]}</TableCell>
                     <TableCell>{row["Size"]}</TableCell>
                     <TableCell>
