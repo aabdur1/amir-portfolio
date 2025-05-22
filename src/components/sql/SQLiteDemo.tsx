@@ -64,7 +64,7 @@ export default function SQLiteDemo() {
           This query selects cars under $30,000 with a reliability score of 4 or
           higher.
         </CardDescription>
-        <pre className="bg-muted/50 text-sm text-green-600 p-4 rounded font-mono overflow-x-auto whitespace-pre-wrap border border-foreground mb-4">
+        <pre className="bg-muted/70 text-sm text-green-600 p-4 rounded font-mono overflow-x-auto whitespace-pre-wrap border border-foreground mb-4">
           {query}
         </pre>
       </CardHeader>
