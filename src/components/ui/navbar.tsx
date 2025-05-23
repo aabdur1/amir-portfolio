@@ -16,49 +16,51 @@ import {
 
 export function Navbar() {
   return (
-    <div className="w-full px-4 py-4 flex justify-between items-center border-b border-muted-foreground bg-background text-foreground">
-      {/* Desktop Navigation */}
-      <NavigationMenu className="hidden md:block">
-        <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avant">
-          {navLinks.map(({ label, to }) => (
-            <NavigationMenuItem key={label}>
-              <NavigationMenuLink
-                asChild
-                className="hover:underline hover:text-primary"
-              >
-                <Link to={to}>{label}</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          ))}
-        </NavigationMenuList>
-      </NavigationMenu>
-
-      {/* Mobile Hamburger Menu */}
-      <div className="block md:hidden">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <button className="p-2">
-              <Menu className="w-6 h-6" />
-            </button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent
-            align="end"
-            className="mt-2 ml-4 w-40 border-foreground"
-          >
+    <nav className="w-full px-4 py-4 bg-background text-foreground border-b border-muted-foreground">
+      <div className="flex justify-between items-center">
+        {/* Desktop Navigation */}
+        <NavigationMenu className="hidden md:block">
+          <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avant">
             {navLinks.map(({ label, to }) => (
-              <DropdownMenuItem asChild key={label}>
-                <Link to={to}>{label}</Link>
-              </DropdownMenuItem>
+              <NavigationMenuItem key={label}>
+                <NavigationMenuLink
+                  asChild
+                  className="hover:underline hover:text-primary"
+                >
+                  <Link to={to}>{label}</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </div>
+          </NavigationMenuList>
+        </NavigationMenu>
 
-      {/* Theme Toggle */}
-      <div className="ml-2">
-        <ModeToggle />
+        {/* Mobile Hamburger Menu */}
+        <div className="block md:hidden">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="p-2">
+                <Menu className="w-6 h-6" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              align="end"
+              className="mt-2 ml-4 w-40 border-foreground"
+            >
+              {navLinks.map(({ label, to }) => (
+                <DropdownMenuItem asChild key={label}>
+                  <Link to={to}>{label}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+
+        {/* Theme Toggle */}
+        <div className="ml-2">
+          <ModeToggle />
+        </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
