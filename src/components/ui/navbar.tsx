@@ -16,7 +16,7 @@ import {
 
 export function Navbar() {
   return (
-    <nav className="w-full px-4 py-4 bg-background text-foreground border-b border-muted-foreground">
+    <nav className="w-screen px-4 py-4 bg-background text-foreground border-b border-muted-foreground">
       <div className="flex justify-between items-center">
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:block">
