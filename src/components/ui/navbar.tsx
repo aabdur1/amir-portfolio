@@ -20,7 +20,7 @@ export function Navbar() {
       <div className="flex justify-between items-center">
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:block">
-          <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avant">
+          <NavigationMenuList className="px-1 py-0 flex justify-center gap-4 font-avant font-light">
             {navLinks.map(({ label, to }) => (
               <NavigationMenuItem key={label}>
                 <NavigationMenuLink
